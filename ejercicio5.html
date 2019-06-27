@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    h2{
+        padding: 2em;
+        background: blue;
+        color:bisque;
+    }
+    .miclase{
+        color:coral;
+    }
+    </style>
+</head>
+<body>
+    <h1>
+        Página para ejercicios
+    </h1>
+    <script>
+       var peso=parseFloat(prompt("Digite su peso"));
+       var esta=parseFloat(prompt("Digite su estatura"));
+       resul=peso/(esta*2);
+       document.write("<p>su imc es " + resul + "</p>");
+       if (resul<18.5){
+            document.write("<p>Usted esta bajo de peso </p>");
+       }else if (resul>18.5 && resul<24.9){
+            document.write("<p> Su peso esta normal </p>");
+       }else if (resul>25 && resul<29.9){
+            document.write("<p>Usted tiene sobre peso </p>");
+       }else if (resul>30 && resul<34.9){
+             document.write("<p>Usted tiene obesidad I </p>");
+       }else if (resul>35 && resul<39.9){
+             document.write("<p>Usted tiene obesidad II </p>");
+       }else if (resul>40 && resul<49.9){
+        document.write("<p>Usted tiene  obesidad III </p>");
+       }else if (resul>50){
+        document.write("<p>Usted tiene obesidad IV </p>");
+       }
+
+       
+
+
+       </script>
+</body>
+</html>
